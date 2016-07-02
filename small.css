@@ -25,7 +25,7 @@ html, body{
             #body a:hover{
                 color:#555;
             }
-            #footer a:hover{
+            #footer a:hover, #header a:hover{
                 color:white;
             }
             #footer{
