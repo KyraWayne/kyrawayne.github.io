@@ -9,7 +9,7 @@
             }
             #body{
                 text-align:center;
-                padding: 100px 5px 245px 5px;
+                padding: 100px 5px 355px 5px;
                 }
             h1{
                 font-family:"Impact";
@@ -21,6 +21,7 @@
             }
             a{
                 color:#bc4e55;
+                text-decoration:none;
             }
             #body a:hover{
                 color:#555;
@@ -66,11 +67,21 @@
             }
            #header li{
                 display:inline;
-                padding:5px 20px 0 20px;
+                padding:5px 30px 0 0;
                 float:right;
            }
            #header ul{
                 margin-bottom:20px;
                 height:20px;
            }
-            
+           #active{
+               color:white;
+           }
+           #sandwichBar{
+               visibility:hidden;
+               overflow:hidden;
+           }
+           #dropDown{
+                visibility:hidden;
+                display:none;
+           }

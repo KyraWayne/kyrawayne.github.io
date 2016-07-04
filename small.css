@@ -1,4 +1,4 @@
-html, body{
+            html, body{
                 margin:0;
                 padding:0;
                 height:100%;
@@ -19,13 +19,14 @@ html, body{
                 font-family:"Arial";
                 color:#555;
             }
-            a{
+            #header a{
                 color:#bc4e55;
+                visibility:hidden;
             }
             #body a:hover{
                 color:#555;
             }
-            #footer a:hover, #header a:hover{
+            #footer a:hover, #dropDown a:hover{
                 color:white;
             }
             #footer{
@@ -48,3 +49,37 @@ html, body{
                 float:none;
                 margin-left:75px;
             }
+            #sandwichBar{
+                float:left;
+                visibility:visible;
+                top:0;
+                width:100%;
+                position:absolute;
+                background-color:#222;
+                height:55px;
+                margin-bottom:200px;
+                padding-top:5px;
+           }
+           #header{
+               display:none;
+               visibility:hidden;
+           }
+           #dropDown{
+               visibility:visible;
+               display:none;
+               background-color:#222;
+               height:150px;
+               width:200px;
+               position:absolute;
+               left:0;
+               top:50px;
+               padding:0;
+               margin-left:-15px;
+           }
+           #sandwichBar img{
+               margin-left:5px;
+           }
+           ul#drop li{
+               list-style-type:none;
+               font-family:arial;
+           }

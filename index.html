@@ -4,17 +4,39 @@
         <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="wide.css" />
         <link rel='stylesheet' media='screen and (max-width: 700px)' href='small.css' />
         <title>Home</title>
+        <script>
+            function eventHandler(){
+                var disp = document.getElementById("dropDown");
+                if (disp.style.display=='inline')
+                    disp.style.display='none';
+                else
+                    disp.style.display='inline';
+            }
+        </script>
     </head>
 <body>
     <div id="container">
-        <div id="header">
-            <ul id="nav">
+        <div id="sandwichBar" >
+            <img src="assets/sandwichBar.png" onclick="eventHandler()" style="height:50px;width:50px;">
+        </div>
+        <div id="dropDown">
+            <ul id="drop">
                 <a href="http://www.kyrawayne.com/blog.html"><li>BLOG</li></a>
                 <a href="http://www.kyrawayne.com/projects.html"><li>PROJECTS</li></a>
                 <a href="http://www.kyrawayne.com/photography.html"><li>PHOTOGRAPHY</li></a>
                 <a href="http://www.kyrawayne.com/artwork.html"><li>ARTWORK</li></a>
                 <a href="http://www.kyrawayne.com/resume.html"><li>RESUME</li></a>
-                <a href="kyrwayne.github.io"><li style="color:white;">HOME</li> </a>
+                <a href="kyrawayne.github.io"><li id="active">HOME</li> </a>
+            </ul>
+        </div>
+        <div id="header"> 
+            <ul id="nav" class="hide">
+                <a href="http://www.kyrawayne.com/blog.html"><li>BLOG</li></a>
+                <a href="http://www.kyrawayne.com/projects.html"><li>PROJECTS</li></a>
+                <a href="http://www.kyrawayne.com/photography.html"><li>PHOTOGRAPHY</li></a>
+                <a href="http://www.kyrawayne.com/artwork.html"><li>ARTWORK</li></a>
+                <a href="http://www.kyrawayne.com/resume.html"><li>RESUME</li></a>
+                <a href="kyrawayne.github.io"><li id="active">HOME</li> </a>
             </ul>
         </div>
         <div id="body">
