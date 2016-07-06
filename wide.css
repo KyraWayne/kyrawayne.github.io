@@ -9,7 +9,7 @@
             }
             #body{
                 text-align:center;
-                padding: 100px 5px 355px 5px;
+                padding: 100px 150px 355px 150px;
                 }
             h1{
                 font-family:"Impact";
@@ -83,4 +83,11 @@
            #dropDown{
                 visibility:hidden;
                 display:none;
+           }
+           #body img{
+                height:300px;
+                width:300px;
+           }
+           .jus{
+               text-align:left;
            }
