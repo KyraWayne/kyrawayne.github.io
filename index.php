@@ -69,6 +69,8 @@
                     </textarea><br><br><br>
                     <input type="submit" value="Send">
                 </form>
+                <?php $thankYou
+                ?>
             </div>
 
         <br><br></div>  <br>

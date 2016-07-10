@@ -91,3 +91,6 @@
            .jus{
                text-align:left;
            }
+           textarea{
+               cols:20;
+           }
