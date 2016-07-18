@@ -9,10 +9,17 @@
             }
             #body{
                 text-align:center;
-                padding: 100px 150px 355px 150px;
+                padding: 50px 150px 250px 150px;
                 }
             h1{
-                font-family:"Impact";
+                font-family: 'hickory_jackregular';
+                font-size:72px;
+                color:#c66;
+                margin:0;
+            }
+            h4{
+                font-style:italic;
+                font-family:arial;
                 color:#bbb;
             }
             p{
@@ -20,7 +27,7 @@
                 color:#555;
             }
             a{
-                color:#bc4e55;
+                color:#c66;
                 text-decoration:none;
             }
             #body a:hover{
@@ -30,9 +37,9 @@
                 color:white;
             }
             #footer{
-                background-color: #555;
+                background-color: #222;
                 width: 100%;
-                height:245px;
+                height:150px;
                 position:absolute;
                 left:0;
                 bottom: 0;
@@ -40,9 +47,11 @@
             .floatRight{
                 margin-left:200px;
             }
-            #footer p{
-                color:white;
+            #footer h4{
+                color:#bbb;
                 padding-left:20px;
+                text-align:left;
+                clear:none;
             }
             .col-third{
                 width:33%;
@@ -51,10 +60,7 @@
                 padding-right:55px;
                 clear:all;
             }
-            #footerImg{
-                padding:40px 75px 0 0; 
-                float:right;
-            }
+
             #header{
                 top:0;
                 width:100%;
@@ -68,10 +74,6 @@
                 display:inline;
                 padding:5px 30px 0 0;
                 float:right;
-           }
-           #header ul{
-                margin-bottom:20px;
-                height:20px;
            }
            #active{
                color:white;
@@ -91,3 +93,8 @@
            .jus{
                text-align:left;
            }
+           #social img{
+               float:right;
+               margin-right:20px;
+           }
+          
