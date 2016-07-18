@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="wide.css" />
-        <link rel='stylesheet' media='screen and (max-width: 700px)' href='small.css' />
-        <title>Resume</title>
+        <link rel="stylesheet" href="stylesheets/wide.css" />
+        <link rel='stylesheet' media='screen and (max-width: 900px)' href='stylesheets/small.css' />
+        <link rel="stylesheet" href="stylesheets/stylesheet.css">
+        <title>Home</title>
         <script>
             function eventHandler(){
                 var disp = document.getElementById("dropDown");
@@ -12,7 +13,48 @@
                 else
                     disp.style.display='inline';
             }
+
+            function photoLink(elem){
+                if (elem.id == 'linkedin'){
+                    document.getElementById("linkedin").src = "assets/linkedinWhite.png";
+                }
+                else if (elem.id == 'mail'){
+                    document.getElementById("mail").src = "assets/mailWhite.png";
+                }
+                else if (elem.id == 'ig'){
+                    document.getElementById("ig").src = "assets/instagramWhite.png";
+                }
+            }
+
+            function redImage(elem){
+                if (elem.id == 'linkedin'){
+                    document.getElementById("linkedin").src = "assets/linkedinRed.png";
+                }
+                else if (elem.id == 'mail'){
+                    document.getElementById("mail").src = "assets/mailRed.png";
+                }
+                else if (elem.id == 'ig'){
+                    document.getElementById("ig").src = "assets/instagramRed.png";
+                }
+            }
         </script>
+        <style>
+            .descript{
+                    text-align:left;
+                    margin-left:50px;
+                    background-color:blue;
+                    width:80%;
+                    clear:none;
+            }
+            .dates{
+                float:right;
+                clear:none;
+                
+                margin-top:-38px;
+                width:10%;
+                background-color:red;
+            }
+        </style>
     </head>
 <body>
     <div id="container">
@@ -21,39 +63,71 @@
         </div>
         <div id="dropDown">
             <ul id="drop">
-                <a href="http://www.kyrawayne.com/blog.html"><li>BLOG</li></a>
-                <a href="http://www.kyrawayne.com/projects.html"><li>PROJECTS</li></a>
-                <a href="http://www.kyrawayne.com/photography.html"><li>PHOTOGRAPHY</li></a>
-                <a href="http://www.kyrawayne.com/artwork.html"><li>ARTWORK</li></a>
-                <a href="kyrawayne.github.io/resume.html"><li id="active">RESUME</li></a>
-                <a href="kyrawayne.github.io"><li>HOME</li> </a>
+                <a href="blog.html"><li>BLOG</li></a>
+                <a href="projects.html"><li>PROJECTS</li></a>
+                <a href="photography.html"><li>PHOTOGRAPHY</li></a>
+                <a href="artwork.html"><li>ARTWORK</li></a>
+                <a href="resume.html"><li>RESUME</li></a>
+                <a href="index.html"><li id="active">HOME</li> </a>
             </ul>
         </div>
         <div id="header"> 
-            <ul id="nav" class="hide">
-                <a href="http://www.kyrawayne.com/blog.html"><li>BLOG</li></a>
-                <a href="http://www.kyrawayne.com/projects.html"><li>PROJECTS</li></a>
-                <a href="http://www.kyrawayne.com/photography.html"><li>PHOTOGRAPHY</li></a>
-                <a href="http://www.kyrawayne.com/artwork.html"><li>ARTWORK</li></a>
-                <a href="kyrawayne.github.io/resume.html"><li id="active">RESUME</li></a>
-                <a href="kyrawayne.github.io"><li>HOME</li> </a>
+            <ul class="hide">
+                <img src="assets/kyrawayneLogo.png" alt="Logo" style="height:50px;width:169px;margin-top:-12px;">
+                <a href="blog.html"><li>BLOG</li></a>
+                <a href="projects.html"><li>PROJECTS</li></a>
+                <a href="photography.html"><li>PHOTOGRAPHY</li></a>
+                <a href="artwork.html"><li>ARTWORK</li></a>
+                <a href="resume.html"><li>RESUME</li></a>
+                <li id="active">HOME</li> 
             </ul>
         </div>
         <div id="body">
-            <br><br><br>
-           
+           <!-- <br><br><br>
+            <h1>Skills & Traits</h1>
+           <div class="descript">
+               <p>Hello hello hello</p>
+           </div>
+           <div class="dates">
+               <p>Hello hello hello</p>
+           </div>
+            <br><br>
+
+           <h1>Education</h1>
+           <div class="descript">
+               <p>Hello hello hello</p>
+           </div>
+           <div class="dates">
+               <p>Hello hello hello</p>
+           </div>
+           <br><br>
+
+           <h1>Experience</h1>
+           <div class="descript">
+               <p>Hello hello hello</p>
+           </div>
+           <div class="dates">
+               <p>Hello hello hello</p>
+           </div>
+           <br><br>
+
+           <h1>Volunteering</h1>
+           <div class="descript">
+               <p>Hello hello hello</p>
+           </div>
+           <div class="dates">
+               <p>Hello hello hello</p>
+           </div>
+            <br><br><br>-->
+        
         <div id="footer">
-            <div class="col-third hide" style="padding:0;">
-                <br>
-                <p style="font-style:italic"> "The walls between art and engineering exist only in our minds" - Theo Jansen</p>
+            <br><br>
+           <!-- <h4>"The walls between art and engineering exist only in our minds" - Theo Jansen</h4>
+          -->  <div id="social">
+                <a href="http://www.linkedin.com/in/kyrawayne"><img id="linkedin" onmouseover="photoLink(this)" onmouseout="redImage(this)" src="assets/linkedinRed.png" style="height:25px; width:25px"></a>
+                <a href="mailto:kyrawayne.dev@gmail.com"><img id="mail" onmouseover="photoLink(this)" onmouseout="redImage(this)"  src="assets/mailRed.png" style="height:25px; width:35px"> </a>
+                <a href="https://www.instagram.com/kyrawayne/"><img id="ig" onmouseover="photoLink(this)" onmouseout="redImage(this)" src="assets/instagramRed.png" style="height:25px; width:25px"></a>
             </div>
-            <div class="col-third hide" style="padding-left:10px;">
-                <h1 style="color:white; padding-top:30px; margin: 0;"><a href="mailto:kyrawayne.dev@gmail.com">Contact</a></h1>
-            </div>
-            
-            <div id="footerImg" style="padding-left:0px;">    
-                <image src="assets/redCircle.png" alt="Logo" style="height:80px;width:80px">
-            </div>
-    </div>
+        </div>
 </body>
 </html>
