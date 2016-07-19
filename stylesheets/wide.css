@@ -12,9 +12,9 @@
                 padding: 50px 150px 250px 150px;
                 }
             h1{
-                font-family: 'hickory_jackregular';
+                font-family: 'hickory_jack_lightregular';
                 font-size:72px;
-                color:#c66;
+                color:rgb(203,85,88);
                 margin:0;
             }
             h4{
@@ -27,7 +27,7 @@
                 color:#555;
             }
             a{
-                color:#c66;
+                color:rgb(203,85,88);
                 text-decoration:none;
             }
             #body a:hover{
