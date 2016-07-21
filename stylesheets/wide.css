@@ -93,4 +93,29 @@
                float:right;
                margin-right:20px;
            }
-          
+          .button{
+              text-align:center;
+              height:50px;
+              width:270px;
+              border: 4px solid rgb(203,85,88);
+              background-color:none;
+              padding:5px 0 5px 0;
+              margin:auto;
+              position:relative;
+              
+          }
+          .button p{
+               color:rgb(203,85,88);
+          }
+          .button:hover{
+              background-color:rgb(203,85,88)
+          }
+          .button:hover p{
+              color:white;
+
+          }
+          .col-half{
+              width:50%;
+              margin-top:5px;
+              float:left;
+          }

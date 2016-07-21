@@ -26,7 +26,7 @@
             }
             #bar{
                 left:0;
-                position:fixed;
+                position:absolute;
             }
             #header a{
                 color:rgb(203,85,88);
@@ -100,4 +100,11 @@
            #social img{
                float:right;
                margin-right:20px;
+           }
+           .button{
+               width:220px;
+           }
+           .col-half{
+               clear:both;
+               width:100%;
            }
