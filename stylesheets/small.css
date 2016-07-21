@@ -9,11 +9,11 @@
             }
             #body{
                 text-align:center;
-                padding: 152px 50px 250px 50px;
+                padding: 152px 10px 250px 10px;
                 }
             h1{
                 font-family: 'hickory_jack_lightregular';
-                font-size:72px;
+                font-size:65px;
                 color:rgb(203,85,88);
                 margin:0;
             }
@@ -89,10 +89,9 @@
                list-style-type:none;
                font-family:arial;
            }
-           #body img{
+           #profile{
                height:230px;
                width:230px;
-             /*  clear:both;*/
            }
            .jus{
                text-align:left;
@@ -103,8 +102,15 @@
            }
            .button{
                width:220px;
+               height:40px;
            }
            .col-half{
                clear:both;
                width:100%;
+           }
+           *{
+               font-size:13px;
+           }
+           .indent, .descript{
+               margin-left:25px;
            }

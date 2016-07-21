@@ -82,7 +82,7 @@
                 visibility:hidden;
                 display:none;
            }
-           #body img{
+           #profile{
                 height:300px;
                 width:300px;
            }
@@ -119,3 +119,30 @@
               margin-top:5px;
               float:left;
           }
+            .descript{
+                text-align:left;
+                margin-left:50px;
+                width:75%;
+                clear:none;
+            }
+            .descript li{
+                font-family:arial;
+                color:#555;
+                line-height:1.8;
+            }
+            .dates{
+                float:right;
+                clear:none;
+                width:15%;
+            }
+            .dates p{
+                color:rgb(203,85,88);
+                font-weight:bold;
+            }
+            .indent{
+                margin-left:40px;
+                font-family:arial;
+                color:#555;
+            }
+
+      
