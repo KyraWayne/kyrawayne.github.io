@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheets/wide.css" />
-        <link rel='stylesheet' media='screen and (max-width: 900px)' href='stylesheets/small.css' />
+        <link rel='stylesheet' media='all and (max-width: 900px)' href='stylesheets/small.css' />
         <link rel="stylesheet" href="stylesheets/stylesheet.css">
         <link rel="stylesheet" href="stylesheets/stylesheetLight.css">
         <title>Home</title>
@@ -43,16 +43,17 @@
 <body>
     <div id="container">
         <div id="sandwichBar" >
-            <img src="assets/sandwichBar.png" onclick="eventHandler()" style="height:50px;width:50px;">
+            <img id="bar" src="assets/sandwichBar.png" onclick="eventHandler()" style="height:50px;width:50px;">
+            <img src="assets/kyrawayneLogo.png" alt="Logo" style="height:50px;width:169px;">
         </div>
         <div id="dropDown">
             <ul id="drop">
-                <a href="blog.html"><li>BLOG</li></a>
-                <a href="projects.html"><li>PROJECTS</li></a>
-                <a href="photography.html"><li id="active"> PHOTOGRAPHY</li></a>
-                <a href="artwork.html"><li>ARTWORK</li></a>
+                <a href="index.html"><li id="active">HOME</li> </a>
                 <a href="resume.html"><li>RESUME</li></a>
-                <a href="index.html"><li>HOME</li> </a>
+                <a href="artwork.html"><li>ARTWORK</li></a>
+                <a href="photography.html"><li>PHOTOGRAPHY</li></a>
+                <a href="projects.html"><li>PROJECTS</li></a>
+                <a href="blog.html"><li>BLOG</li></a>
             </ul>
         </div>
         <div id="header"> 
